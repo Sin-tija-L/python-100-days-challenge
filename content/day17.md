@@ -1,4 +1,4 @@
-# Day17 - Another Cheat
+# 👉 Day 17: Another Cheat
 
 <a href="https://www.youtube.com/watch?v=e5048kp-ogk" target="_blank">Dāvida video</a>
 

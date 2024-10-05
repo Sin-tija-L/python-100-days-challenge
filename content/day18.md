@@ -1,4 +1,4 @@
-# Day18 - 👉 Day 18 Challenge
+# 👉 Day 18 Challenge
 
 <a href="https://www.youtube.com/watch?v=ox5KGtrXs5E" target="_blank">Dāvida video</a>
 

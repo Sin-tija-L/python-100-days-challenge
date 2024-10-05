@@ -1,4 +1,4 @@
-# Day13 - 👉 Day 13 Challenge
+# 👉 Day 13 Challenge
 
 
 <a href="https://www.youtube.com/watch?v=fOFWkmAyCHY" target="_blank">Dāvida video</a>

@@ -1,4 +1,4 @@
-# Day16 - while True Loop
+# 👉 Day 16: while True Loop
 
 <a href="https://www.youtube.com/watch?v=cuseM3bReT4" target="_blank">Dāvida video</a>
 

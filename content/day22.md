@@ -1,4 +1,4 @@
-# Day22 - Libraries
+# 👉 Day 22: Libraries
 
 <a href="https://www.youtube.com/watch?v=KQ0hAk_lXCQ" target="_blank">Dāvida video</a>
 

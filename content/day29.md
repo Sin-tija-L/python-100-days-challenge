@@ -1,4 +1,4 @@
-# 👉 Day 29 Challenge
+# 👉 Day 29: Secret One: end
 
 <a href="https://www.youtube.com/watch?v=xeqG1AgvDLI" target="_blank">Dāvida video</a>
 

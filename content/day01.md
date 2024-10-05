@@ -1,4 +1,4 @@
-# Day1- Welcome!
+# 👉 Day 1: Welcome! 🚀
 
 ## Wow, One Hundred Days?!
 

@@ -1,4 +1,4 @@
-# Day10 - A little bit of math
+# 👉 Day 10: A little bit of math
 
 <a href="https://www.youtube.com/watch?v=8pzLxVej3_g" target="_blank">Dāvida video</a>
 

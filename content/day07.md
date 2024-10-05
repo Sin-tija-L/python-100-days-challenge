@@ -1,4 +1,4 @@
-# Day07 - Nesting
+# 👉 Day 7: Nesting
 
 <a href="https://www.youtube.com/watch?v=Abk1jPdnMIc" target="_blank">Dāvida video</a>
 

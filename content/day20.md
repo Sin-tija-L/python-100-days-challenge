@@ -1,4 +1,4 @@
-# Day20 - What can range really do?
+# 👉 Day 20: What can range really do?
 
 <a href="https://www.youtube.com/watch?v=cstyIsl2Q6s" target="_blank">Dāvida video</a>
 

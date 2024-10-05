@@ -1,4 +1,4 @@
-# Day23 - Subroutine
+# 👉 Day 23: Subroutine
 
 <a href="https://www.youtube.com/watch?v=gogQkRaXPmA" target="_blank">Dāvida video</a>
 

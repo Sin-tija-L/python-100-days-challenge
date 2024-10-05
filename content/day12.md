@@ -1,4 +1,4 @@
-# Day12 - Debug 🚫🪲 my code.
+# 👉 Day12: Debug 🚫🪲 my code.
 
 <a href="https://www.youtube.com/watch?v=MHY4Ei2U60k" target="_blank">Dāvida video</a>
 

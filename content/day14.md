@@ -1,4 +1,4 @@
-# Day14 - 2 player 🪨📄✂️
+# 👉 Day 14: 2 player 🪨📄✂️
 
 <a href="https://www.youtube.com/watch?v=5YP8QIpR1SQ
 " target="_blank">Dāvida video</a> 

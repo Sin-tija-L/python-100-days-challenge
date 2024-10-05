@@ -1,4 +1,4 @@
-# Day06 - What the elif is this?
+# 👉 Day 6: What the elif is this?
 
 
 <a href="https://www.youtube.com/watch?v=Dm8lRtcnh0o" target="_blank">Dāvida video</a>

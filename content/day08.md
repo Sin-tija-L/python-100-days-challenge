@@ -1,4 +1,4 @@
-# Day08 - 👉 Day 8 Challenge
+# 👉 Day 8 Challenge
 
 <a href="https://www.youtube.com/watch?v=3SXW63IIs4I" target="_blank">Dāvida video</a>
 

@@ -1,4 +1,4 @@
-# Day05 - If Statements
+# 👉 Day 5: If Statements
 
 
 <a href="https://www.youtube.com/watch?v=Wmn9yze6m5U" target="_blank">Dāvida video</a>

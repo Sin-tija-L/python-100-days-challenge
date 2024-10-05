@@ -1,8 +1,7 @@
-# 👉 Day 32 Challenge
+# 👉 Day 32: Lists
 
 <a href="https://www.youtube.com/watch?v=sylq300J9EM" target="_blank">Dāvida video</a>
 
-## Lists
 
 In Computer Science, we learn about a data structure called arrays. Arrays are a place to store more than one thing with the same variable name.
 

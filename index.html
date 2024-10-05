@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Python 100 Days Challenge</title>
+    <title>Python 100 dienu izaicinājums</title>
     <link rel="stylesheet" href="styles/main.css" />
     <script src="https://cdn.jsdelivr.net/pyodide/v0.22.1/full/pyodide.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/marked/2.0.3/marked.min.js"></script>
@@ -11,14 +11,17 @@
   <body>
     <header id="logo">
       <img src="assets/logo.png" alt="Python 100 Days Challenge Logo" />
+      <nav>
+        <ul id="navigation"></ul>
+      </nav>
     </header>
-    <nav>
-      <ul id="navigation"></ul>
-    </nav>
-    <main id="content"></main>
-    <div id="python-container">
-      <button id="run-python" disabled>Run</button>
-    </div>
+    <main>
+      <h1 id="title">Python 100 dienu izaicinājums</h1>
+      <div id="content"></div>
+      <div id="python-container">
+        <button id="run-python" disabled>Run</button>
+      </div>
+    </main>
     <script src="scripts/main.js"></script>
   </body>
 </html>

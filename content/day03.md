@@ -1,4 +1,4 @@
-# Day3- Concatenate
+# 👉 Day 3: Concatenate
 
 <a href="https://www.youtube.com/watch?v=G7r_1NQrSm0" target="_blank">Dāvida video</a>
 

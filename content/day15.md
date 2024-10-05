@@ -1,4 +1,4 @@
-# Day15 - All About Loops
+# 👉 Day 15: All About Loops
 
 <a href="https://www.youtube.com/watch?v=AwCI7IG-i38" target="_blank">Dāvida video</a>
 

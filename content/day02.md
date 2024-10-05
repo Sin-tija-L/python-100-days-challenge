@@ -1,4 +1,4 @@
-# Day2 - Taking user input
+# 👉 Day 2: Taking user input
 
 ## Input
 

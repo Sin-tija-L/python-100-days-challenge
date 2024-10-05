@@ -1,4 +1,4 @@
-# Day21 - 👉 Day 21 Challenge
+# 👉 Day 21 Challenge
 
 
 <a href="https://www.youtube.com/watch?v=rfK_QXsf2PA" target="_blank">Dāvida video</a>

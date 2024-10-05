@@ -1,4 +1,4 @@
-# Day19 - For Loop
+# 👉 Day 19: For Loop
 
 <a href="https://www.youtube.com/watch?v=0n65nmmuCSI" target="_blank">Dāvida video</a>
 

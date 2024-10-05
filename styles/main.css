@@ -1,3 +1,7 @@
+* {
+  box-sizing: border-box;
+}
+
 body {
   font-family: Arial, sans-serif;
   line-height: 1.6;
@@ -5,13 +9,22 @@ body {
   padding: 0;
   background-color: #f9f2ff;
   color: #351b50;
-}
-
-nav {
-  padding: 1rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  max-width: 100%;
+  padding: 0 20px;
 }
 
 nav ul {
+  list-style-type: none;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+}
+
+.day-list {
   list-style-type: none;
   padding: 0;
   display: flex;
@@ -19,35 +32,51 @@ nav ul {
   gap: 3px;
 }
 
-nav ul li {
+.day-item {
   margin-right: 10px;
   margin-bottom: 5px;
 }
 
-nav ul li a {
+.day-select {
+  width: 265px;
+  height: 52px;
+  font-family: Arial, sans-serif;
+  font-weight: bold;
+  font-size: 26px;
   text-decoration: none;
   color: #351b50;
   padding: 5px 10px;
   border-radius: 5px;
-  background-color: #f5d14c;
+  background-color: #F5D14C;
+  border: 4px solid rgba(53, 27, 80, 0.1);
+  font-family: inherit;
+  font-size: inherit;
+  cursor: pointer;
+}
+
+.day-select:focus {
+  outline: none;
+  box-shadow: none;
+}
+
+.day-select > option {
+  text-align: center;
 }
 
 main {
-  padding: 20px;
-}
-
-#content {
-  max-width: 1000px;
+  width: 100%;
+  max-width: 1100px;
 }
 
 #python-container {
-  margin: 50px 50px 50px 10px;
+  margin: 50px 0 50px 0;
+  width: 100%;
+  max-width: 1100px;
 }
 
 #python-content {
   background-color: #f8f8f8;
   border: 1px solid #ddd;
-  padding: 10px;
   white-space: pre-wrap;
   font-family: monospace;
 }
@@ -62,7 +91,6 @@ main {
   border: none;
   border-radius: 50px;
   cursor: pointer;
-  text-align: center;
 }
 
 #run-python:disabled {
@@ -113,20 +141,31 @@ li > code {
 
 #logo {
   width: 100%;
+  max-width: 1100px;
   margin-top: 50px;
   display: flex;
-  justify-content: center;
+  justify-content: space-between;
+  align-items: center;
+  @media (max-width: 550px) {
+    flex-direction: column;
+    gap: 20px;
+    margin-left: 0px;
+  }
 }
 
 #logo > img {
-  max-width: 200px;
-  height: auto;
+  max-width: 209px;
+  height: 37px;
 }
 
 #image {
   background-color: #351b50;
   padding: 20px;
   border-radius: 5px;
+  @media (max-width: 1040px) {
+    max-width: 100%;
+    padding: 10px;
+  }
 }
 
 a {
@@ -137,4 +176,38 @@ details {
   border: 1px solid #351b50;
   border-radius: 5px;
   padding: 10px;
+}
+
+#title {
+  text-align: center;
+  width: 100%;
+  max-width: 1100px;
+}
+
+.code-block {
+  position: relative;
+  background-color: #351b50;
+  border-radius: 4px;
+  padding: 1rem;
+  margin: 1rem 0;
+}
+.code-block pre {
+  margin: 0;
+  white-space: pre-wrap;
+  word-wrap: break-word;
+}
+.copy-button {
+  position: absolute;
+  top: 0.5rem;
+  right: 0.5rem;
+  background-color: #F5D14C;
+  color: #351b50;
+  border: none;
+  border-radius: 4px;
+  padding: 0.25rem 0.5rem;
+  cursor: pointer;
+  font-size: 0.8rem;
+}
+.copy-button:hover {
+  background-color: #F5D14C;
 }

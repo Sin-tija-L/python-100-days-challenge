@@ -1,4 +1,4 @@
-# Day26 - os Library
+# 👉 Day 26: os Library
 
 <a href="https://www.youtube.com/watch?v=_IGpC-sA7M4" target="_blank">Dāvida video</a>
 
@@ -204,4 +204,30 @@ while True:
 ```
 
 </details>
+
+## !NB 
+
+Ja nestrādā `pygame`, tad nepieciešams to instalēt lokāli. Atveram VS CODE `terminal` un veicam sekojošus soļus:
+
+<img id="image" src="assets/day26-06.png" alt="Replit Workspace Overview" width="960">
+
+
+```python
+
+1. python3 -m pip install pygame
+2. python3 -c "import pygame"
+
+
+```
+
+Ja pēc instalācijas joprojām nestrādā `pygame`, tad veicam vēl sekojošas darbības: 
+
+```python
+1. VS CODE atveram komandu paleti (Cmd+Shift+P on Mac or Ctrl+Shift+P on Windows/Linux).
+2. Rakstām:  "Python: Select Interpreter".
+3. Izvēlamies variantu, kur ir mūsu - myenv, piemērs zemāk attēlā.
+```
  
+<img id="image" src="assets/day26-07.png" alt="Replit Workspace Overview" width="960">
+
+Šajā uzdevumā run pogu neizmantojam. 

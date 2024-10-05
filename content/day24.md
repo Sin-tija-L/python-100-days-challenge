@@ -1,4 +1,4 @@
-# Day24 - Parameters
+# 👉 Day 24: Parameters
 
 <a href="https://www.youtube.com/watch?v=AEpcNiqV73k" target="_blank">Dāvida video</a>
 

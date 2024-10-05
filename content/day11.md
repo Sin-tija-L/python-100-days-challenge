@@ -1,4 +1,4 @@
-# Day11 - 👉 Day 11 Challenge
+# 👉 Day 11 Challenge
 
 
 <a href="https://www.youtube.com/watch?v=pKRE-W9HGNs" target="_blank">Dāvida video</a>

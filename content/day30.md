@@ -1,4 +1,4 @@
-# 👉 Day 30 Challenge
+# 👉 Day 30: f-strings
 
 <a href="https://www.youtube.com/watch?v=uaOmD6XRt3A" target="_blank">Dāvida video</a>
 
