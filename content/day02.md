@@ -6,8 +6,7 @@
 
 Let's take a look at the `input` command and how that works. Input is when the user gives information to the computer.
 
-<img src="assets/day02.png" alt="Replit Workspace Overview" width="1000">
-
+<img id="image" src="assets/day02.png" alt="Replit Workspace Overview" width="960">
 
 It's very similar to the `print` command, except that it'll show the message in the console then wait until the user has typed something into the console and pressed enter. Let's try it!
 
@@ -23,17 +22,16 @@ input("What's your name?: ")
 
 `input` asks for something, takes it, but then has nowhere to put it. We can change that with a `variable` which is a value that we can use to name and store data. (Remember, David's box for David's phone?)
 
-
-<img src="assets/day02-1.png" alt="Replit Workspace Overview" width="1000">
+<img id="image" src="assets/day02-1.png" alt="Replit Workspace Overview" width="960">
 
 ## Naming variables
 
 You can give a variable any name you want, but you can't use spaces. You can use:
+
 - underscores_between_words
 - camelCaseToMakeItEasierToRead
 
 👉 Delete all your code and copy this into your code editor in the `day02.py` file:
-
 
 ```python
 myName = input("What's you name? ")
@@ -44,6 +42,7 @@ print("OF COURSE YOU DO!")
 ```
 
 We now have three variables:
+
 - myName has the user's name in it
 - myAge is storing their age
 - replit is storing their feelings about this amazing website.
@@ -56,7 +55,7 @@ You can print your variable using `print` and the name you used for your variabl
 
 In your code you can now print 'name' by using `print(myName)` or 'age' by using `print(myAge)`.
 
-<img src="assets/day02-2.png" alt="Replit Workspace Overview" width="1000">
+<img id="image" src="assets/day02-2.png" alt="Replit Workspace Overview" width="960">
 
 👉 Let's try it! Try adding this code to the end of what you've got and hit `run`:
 
@@ -69,16 +68,17 @@ print(myAge)
 print("and clearly think that Replit is")
 print(replit)
 ```
+
 Did you notice what `print()` did?
+
 - if there is text inside `()` the text is printed
 - if there is nothing inside the `()` then a blank line is added for a bit of space
 
 ### This code looks a little funky at the moment. We will make this look better tomorrow.
 
-
 # Common Errors
 
-*First, delete any other code in your `day02.py` file. Copy each code snippet below into `day02.py` by clicking the copy icon in the top right of each code box. Then, hit `run` and see what errors occur. Fix the errors and press `run` again until you are error free. Click on the 👀 Answer to compare your code to the correct code.*
+_First, delete any other code in your `day02.py` file. Copy each code snippet below into `day02.py` by clicking the copy icon in the top right of each code box. Then, hit `run` and see what errors occur. Fix the errors and press `run` again until you are error free. Click on the 👀 Answer to compare your code to the correct code._
 
 ## Syntax Error
 
@@ -90,7 +90,6 @@ print(my variable)
 ```
 
 Did you get this error message? What can you fix?
-
 
 ```python
 File "day02.py", line 1
@@ -107,6 +106,7 @@ Did you notice the space in the variable name? We never put spaces in variable n
 </details>
 
 ## Name Error
+
 👉 What is wrong with this code? Copy only the code and press `run`.
 
 ```python
@@ -132,6 +132,7 @@ NameError: name 'mygrandma' is not defined
 </details>
 
 ## This is just plain weird...
+
 You won't get an error from this one, but the output won't make a lot of sense...
 
 👉 Copy this code and `run` it to see what happens.
@@ -158,9 +159,9 @@ as soon as possible!
 
 # Fix My Code
 
-👉 Try and fix this code which is *full* of errors.
+👉 Try and fix this code which is _full_ of errors.
 
-*First, delete any other code in your `day02.py` file. Copy each code snippet below into `day02.py` by clicking the copy icon in the top right of each code box. Then, hit `run` and see what errors occur. Fix the errors and press `run` again until you are error free. Click on the `👀 Answer` to compare your code to the correct code.*
+_First, delete any other code in your `day02.py` file. Copy each code snippet below into `day02.py` by clicking the copy icon in the top right of each code box. Then, hit `run` and see what errors occur. Fix the errors and press `run` again until you are error free. Click on the `👀 Answer` to compare your code to the correct code._
 
 **Please note: This is a silly example. You'd never write your own Phishing code, but it's really important to know what to look for. If someone's asking you for this kind of information online - think twice!**
 
@@ -207,13 +208,11 @@ print("was your Mum's maiden name. Not because the bank requested it or anything
 
 </details>
 
-
-
 # 👉 Day 2 Challenge
 
 ## Getting to Know You Project
 
-*You can continue to use this same repl for your project. Just make sure you delete any previous code from our practice session.*
+_You can continue to use this same repl for your project. Just make sure you delete any previous code from our practice session._
 
 Write code that does the following:
 
@@ -225,7 +224,6 @@ Write code that does the following:
 Think about what needs to be a `print` statement and what needs to be an `input` statement.
 
 </details>
-
 
 2. Store all of the answers in different variables.
 
@@ -243,15 +241,13 @@ Create a different `input` statement for each variable.
 
 Remember, you have to create the variable with `input` before you can `print`.
 
-
 </details>
-
 
 4. Give them a positive affirmation at the end - tell them they rock at doing something!
 
 ## Example (go to the end for the solution...but no peeking):
 
-```python 
+```python
 Getting to know you!
 You are
 Mark
@@ -263,13 +259,12 @@ living in the amazing
 Edge of reality
 ```
 
- # Solution (No peeking!)
-
+# Solution (No peeking!)
 
 <details>
 <summary>👀 Answer</summary>
 
-```python 
+```python
 print("Getting to know you!")
 YourName = input("What is your name? ")
 Hungry = input ("What is your favorite food? ")
@@ -277,7 +272,7 @@ Music = input("What is your favorite music? ")
 WhereAreYou = input("Where are you? ")
 print("You are")
 print(YourName)
-print() 
+print()
 print("You're probably hungry for")
 print(Hungry)
 print()
@@ -286,7 +281,7 @@ print (Music)
 print()
 print ("You're probably living in the amazing")
 print (WhereAreYou)
-print() 
+print()
 print ("Have a great day!")
 ```
 

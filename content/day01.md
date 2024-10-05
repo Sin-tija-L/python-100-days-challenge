@@ -1,4 +1,4 @@
-# Day1-  Welcome!
+# Day1- Welcome!
 
 ## Wow, One Hundred Days?!
 
@@ -16,25 +16,24 @@ Replit is the best place to learn to code because there's zero set up - which me
 
 All you need to do now is follow along with the video, go from one chapter to the next in this tutorial panel, and just have fun! Now let's go!
 
-#  Replit Workspace
--  Click on the day01.py file on the left. It should open up the file in the main coding window (#2 below) so we can get starte
+# Replit Workspace
 
+- Click on the day01.py file on the left. It should open up the file in the main coding window (#2 below) so we can get starte
 
-<img src="assets/day01.png" alt="Replit Workspace Overview" width="1000">
+<img id="image" src="assets/day01.png" alt="Replit Workspace Overview" width="960">
 
 Let's take a quick tour of the Replit workspace:
 
 1. **Tutorial:** This is accessible from the 📖 (9) icon. You will find video transcript and helper code here.
 2. **Files:** If you need to view a different file, just click on it here. This is also where you can upload any assets (pictures, gifs, etc.) to use in your project.
 3. **Coding window:** Where you will do most of your typing. All your code will be added here, and you can also view files here.
-4. **Console:** Shows you the *output* of the program (anything we tell our program to show to our users will appear here).
+4. **Console:** Shows you the _output_ of the program (anything we tell our program to show to our users will appear here).
 5. **Run:** Will make your code... well, run.
 6. **Publish:** Share your code with our community for others to see and remix.
 7. **Invite:** Allow someone else to edit your code live in multiplayer.
 8. **Hamburger:** Go back to the main menu.
 9. This button brings up the tutorial pane if you've closed it.
 10. Your video tutorial, play through and pause when asked to build up your coding skills!
-
 
 # Let's get coding!
 
@@ -45,8 +44,8 @@ Let's start with some simple code to get a simple output (the information the pr
 ```python
 print("Hello Replit")
 ```
-(HINT: Anytime you see 👉 this means you are going to copy, add or write code in the coding editor).
 
+(HINT: Anytime you see 👉 this means you are going to copy, add or write code in the coding editor).
 
 If everything works as expected your console should now show you your lovely message!
 
@@ -57,22 +56,20 @@ If you want to feel like a proper hacker, when you've finished writing your code
 
 </details>
 
-
 # Our first statement
 
 ## Print Statements
 
 You just learned your first command: the `print` statement. It says "Print out whatever's in my brackets". The `print` statement is how you get your program to put messages in the console.
 
-![Replit Workspace Overview](assets/day01-1.png)
-
+<img id="image" src="assets/day01-1.png" alt="Replit Workspace Overview" width="960">
 
 - The `""` (quotes) are used to tell the command that you're putting text in there (any text you want)
 - A bunch of text (or whatever you put in quotes) is called a string.
 
 ### Multiple Print Statements
-👉 Here is what multiple `print` statements looks like. Copy this code into `day01.py` and hit `run`.
 
+👉 Here is what multiple `print` statements looks like. Copy this code into `day01.py` and hit `run`.
 
 ```python
 print("Well we")
@@ -101,6 +98,7 @@ Sometimes you get errors when coding. Here are the most popular errors:
 ## NameError
 
 You'll see this error message if:
+
 - you get the name of a function wrong
 - you misspell it
 - get the capitalization wrong
@@ -134,6 +132,7 @@ You will see this message if:
 ```python
 print "Hello Again"
 ```
+
 What do you think is wrong?
 
 ```python
@@ -150,6 +149,7 @@ That's right. You forgot `()`.
 ```python
 print(Please work)
 ```
+
 ```python
 File "day01.py", line 1
     print(Please work)
@@ -161,8 +161,8 @@ You need `" "`.
 
 #### You will only get better at debugging by practicing! You'll find lots of errors in your own code as you go, so make sure you get practice by trying all the "Fix my code" activities whenever you see them!
 
-
 # Fix my code!
+
 👉 Try and fix this code which is full of errors.
 
 First, delete any other code in your `day01.py` file. Copy each code snippet below into `day01.py` by clicking the copy icon in the top right of each code box. Then, hit `run` and see what errors occur. Fix the errors and press `run` again until you are error free. Click on the 👀 `Answer` to compare your code to the correct code.
@@ -177,23 +177,24 @@ print(> Artists")
 <details>
 <summary>👀 Answer</summary>
 
-```python 
+```python
 print("= MUSIC+ =")
 print("> Songs")
 print("> Albums")
 print("> Artists")
 ```
 
-*It does not matter if you use capital letters or lowercase letters for your string. Just be consistent.*
+_It does not matter if you use capital letters or lowercase letters for your string. Just be consistent._
+
 </details>
 
 # Here is your challenge for Day 1
 
 ## Project 1: Print into the World
 
-*Let's get started with your first project! After only one day, you already have something you can share with the world.*
+_Let's get started with your first project! After only one day, you already have something you can share with the world._
 
-*You can continue to use this same repl for your project. Just make sure you delete any previous code from our practice session.*
+_You can continue to use this same repl for your project. Just make sure you delete any previous code from our practice session._
 
 1. Write your `full name` and `today's date` in separate lines of code.
 
@@ -206,7 +207,7 @@ Don't forget `""` and `()` when creating your print statements.
 
 2. Copy this text below. See if you can do it with just the one `print` statement!
 
-```python 
+```python
 I am signing up for Replit's 100 days of Python challenge!
 I will make sure to spend some time every day coding along, for a minimum of 10 minutes a day.
 I'll be using Replit, an amazing online IDE so I can do this from my phone wherever I happend to be. No excuses for not coding from the middle of a field!
@@ -225,15 +226,12 @@ Remember you can use triple quotes for a large block of text. `"""`
 
 5. Run your program.
 
-
-
 # Solution (No peeking!)
-
 
 <details>
 <summary>👀 Answer</summary>
 
-```python 
+```python
 print("Marky")
 print("September 20, 2029")
 print("""I am signing up for Replit's 100 days of Python challenge!

@@ -6,7 +6,7 @@ Nesting is where we put an `if` statement within an `if` statement using the pow
 
 Pay attention to the vertical lines (as shown with the blue arrows in this image) to ensure your indents line up correctly.
 
-<img src="assets/day07.png" alt="Replit Workspace Overview" width="1000">
+<img id="image" src="assets/day07.png" alt="Replit Workspace Overview" width="960">
 
 👉 Do you notice the second `if` statement below about `faveCharacter` and how it is indented?
 
@@ -48,13 +48,12 @@ elif tvShow == "paw patrol":
   print("Aww, sad times")
 else:
   print("Yeah, that's cool and all…")
-  ```
-
+```
 
 <details>
 <summary>👀 Answer</summary>
 
-```python 
+```python
 else:
   print("Nah, Daddy Pig's the greatest")
 ```
@@ -70,14 +69,14 @@ is not indented properly.
 
 First, delete any other code in your `day07.p`y file. Copy each code snippet below into `day07.py` by clicking the copy icon in the top right of each code box. Then, hit `run` and see what errors occur. Fix the errors and press `run` again until you are error free. Click on the `👀 Answer` to compare your code to the correct code.
 
-```python 
+```python
 order = input(What would you like to order: pizza or hamburger? ")
 if order = "hamburger":
 print("Thank you.")
   cheese = input("Do you want cheese?")
   if cheese == "yes":
   print("You got it.")
-else: 
+else:
     print("No cheese it is.")
 elif order == pizza:
   print("Pizza coming up.")
@@ -91,14 +90,14 @@ else:
 <details>
 <summary>👀 Answer</summary>
 
-```python 
+```python
 order = input("What would you like to order: pizza or hamburger? ")
 if order == "hamburger":
   print("Thank you.")
   cheese = input("Do you want cheese?")
   if cheese == "yes":
     print("You got it.")
-  else: 
+  else:
     print("No cheese it is.")
 elif order == "pizza":
   print("Pizza coming up.")
@@ -124,7 +123,6 @@ Make sure you include multiple if/elif statements and nested if statements too!
 
 The code from today is a good place to get you started.
 
-
 </details>
 
 ## Solution (NO Peeking!)
@@ -132,7 +130,7 @@ The code from today is a good place to get you started.
 <details>
 <summary>👀 Answer</summary>
 
-```python 
+```python
 print ("Are you a superfan of 'The Big Bang Theory' or a fake fan? ")
 print()
 print("Answer these questions to find out.")

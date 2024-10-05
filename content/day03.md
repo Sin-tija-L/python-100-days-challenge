@@ -6,7 +6,6 @@
 
 All it really means is combine text (remember, text is called a string) and variables together into single sentences! 😲🤯
 
-
 You can make your input and output look super pretty now! 🥳
 
 👉 Copy the code below into `day03.py` and `run` it. See what it does:
@@ -21,10 +20,9 @@ You just made a full sentence, right? But how did it work?
 
 - It turns out `print` has a super-power. We can give it as many different things to print as we want. All we need to do is put a comma `,` between every different thing in the `()`.
 
-<img src="assets/day03.png" alt="Replit Workspace Overview" width="1000">
+<img id="image" src="assets/day03.png" alt="Replit Workspace Overview" width="960">
 
-
-👉 Let's go BIG and try a bunch of code... *You probably know this by now, but make sure you delete any old code first and add all code to `day03.py`*.
+👉 Let's go BIG and try a bunch of code... _You probably know this by now, but make sure you delete any old code first and add all code to `day03.py`_.
 
 ```python
 number = input("Give me a number: ")
@@ -37,7 +35,7 @@ print("No I don't think that", number, "is a", group, "of", thing,". That's just
 
 ## Common Errors
 
-*First, delete any other code in your `day03.py` file. Copy each code snippet below into `day03.py` by clicking the copy icon in the top right of each code box. Then, hit `run` and see what errors occur. Fix the errors and press `run` again until you are error free. Click on the '👀 Answer' to compare your code to the correct code.*
+_First, delete any other code in your `day03.py` file. Copy each code snippet below into `day03.py` by clicking the copy icon in the top right of each code box. Then, hit `run` and see what errors occur. Fix the errors and press `run` again until you are error free. Click on the '👀 Answer' to compare your code to the correct code._
 
 ### Invalid Syntax
 
@@ -59,7 +57,6 @@ SyntaxError: invalid syntax
 
 ```
 
-
 <details>
 <summary>👀 Answer</summary>
 
@@ -71,7 +68,7 @@ SyntaxError: invalid syntax
 
 # Your code may run...but look weird
 
-👉 This code would *actually* run, but...
+👉 This code would _actually_ run, but...
 
 ```python
 yourName = input("Name: ")
@@ -92,8 +89,8 @@ yourname, thinks it is, whatYear
 
 - Another common error occurs when you wrap the entire thing in quotes `(".., .., .. ")`.
 - This actually runs, but doesn't quite do what you want.
-- Everything in `(".., .., .. ")` gets printed *literally*.
-- Since the variable names are alo within quotes `(".., .., .. ")`, it's literally printing the names rather than the contents. 
+- Everything in `(".., .., .. ")` gets printed _literally_.
+- Since the variable names are alo within quotes `(".., .., .. ")`, it's literally printing the names rather than the contents.
 - The only thing in quotes should be the literal strings `print(varName, "literal string", varName2)`.
 
 </details>
@@ -102,7 +99,7 @@ yourname, thinks it is, whatYear
 
 👉 Try and fix this code which is full of errors.
 
-*First, delete any other code in your `day03.py` file. Copy each code snippet below into `day03.py` by clicking the copy icon in the top right of each code box. Then, hit `run` and see what errors occur. Fix the errors and press `run` again until you are error free. Click on the `👀 Answer` to compare your code to the correct code.*
+_First, delete any other code in your `day03.py` file. Copy each code snippet below into `day03.py` by clicking the copy icon in the top right of each code box. Then, hit `run` and see what errors occur. Fix the errors and press `run` again until you are error free. Click on the `👀 Answer` to compare your code to the correct code._
 
 ```python
 print("=== Your Song Generator ===")
@@ -151,6 +148,7 @@ Remember when you were a kid and thought the ideal dinner would just be all your
 You will need to:
 
 1. Create these as a variable:
+
 - A type of food
 - A type of plant
 - A method of cooking
@@ -162,18 +160,16 @@ You will need to:
 
 `input` is used for variables.
 
-
 </details>
 
-2. Output a nice looking Recipe page that *concatenates* a dish in this format:
-- `cooking` `food` with `burned` `plant` on a bed of `item``
+2. Output a nice looking Recipe page that _concatenates_ a dish in this format:
 
+- `cooking` `food` with `burned` `plant` on a bed of `item``
 
 <details>
 <summary>💡 Hint</summary>
 
 Think about how you use `print`, `,` and `""`.
-
 
 </details>
 
@@ -182,7 +178,7 @@ Think about how you use `print`, `,` and `""`.
 ```python
 Name a food > Mac & Cheese
 Name a type of plant > Cactus
-Name a method of cooking > Saute        
+Name a method of cooking > Saute
 What word describes burned food? > Ruined
 Name a DIY item > Hammer
 
@@ -195,6 +191,7 @@ EXTRA: Remix your recipe to include more variables and a wackier type of dish.
 ### Why not step it up and create a recipe for a starter, main course and dessert?
 
 # Share on social media
+
 You created your first project! Go you! Now it is time to share it with the world.
 
 Click on the "Mark lesson completed" button on the top right and share your progress with the world!!
@@ -202,11 +199,11 @@ Click on the "Mark lesson completed" button on the top right and share your prog
 Screenshot the output (what you see in the console of your repl) and post it to social media with the hashtag `#replit100DaysOfCode` to share your first code output with the world!
 
 ## Get connected
+
 Join our <a href="https://www.google.com" target="_blank">100 Days of Code Community</a>
- and our <a href="https://www.google.com" target="_blank">Discord channel.</a>
+and our <a href="https://www.google.com" target="_blank">Discord channel.</a>
 
- # Solution (No peeking!)
-
+# Solution (No peeking!)
 
  <details>
 <summary>👀 Answer</summary>

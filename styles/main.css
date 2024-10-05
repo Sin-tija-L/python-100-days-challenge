@@ -89,8 +89,12 @@ main {
   display: inline-block;
   color: #f5d14c;
   font-size: 16px;
-  width: 100%;
+  width: 98%;
   text-wrap: wrap;
+}
+
+details > pre > .language-python {
+  width: 98%;
 }
 
 p > code {
@@ -117,4 +121,20 @@ li > code {
 #logo > img {
   max-width: 200px;
   height: auto;
+}
+
+#image {
+  background-color: #351b50;
+  padding: 20px;
+  border-radius: 5px;
+}
+
+a {
+  color: #351b50;
+}
+
+details {
+  border: 1px solid #351b50;
+  border-radius: 5px;
+  padding: 10px;
 }

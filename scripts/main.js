@@ -72,7 +72,7 @@ ${currentPythonCode}
   await initializePyodide();
 
   // Initialize navigation menu
-  for (let i = 1; i <= 15; i++) {
+  for (let i = 1; i <= 35; i++) {
     const li = document.createElement("li");
     const a = document.createElement("a");
     a.href = `#day${i}`;

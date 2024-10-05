@@ -10,7 +10,7 @@ A `while` loop allows your code to repeat itself based on a condition you set.
 
 It is similar to an `if` statement in that you ask a question, and as long as the answer is true, the computer will repeatedly run the code.
 
-<img src="assets/day15.png" alt="Replit Workspace Overview" width="1000">
+<img id="image" src="assets/day15.png" alt="Replit Workspace Overview" width="960">
 
 In the code below, the variable is called `counter` and starts at zero. The `while` loop has the condition saying, "while the counter is less than ten do this..."
 
@@ -64,17 +64,19 @@ First, delete any other code in your `day15.py` file. Copy each code snippet bel
 ## Infinite Loop
 
 `Run` this code. What happens?
+
 ```python
 counter = 0
 while counter < 10:
   print(counter)
 ```
+
 <details>
 <summary>👀 Answer</summary>
 
 You see a series of infinite 0s printing over and over. Why? You have created an infinite loop because the counter will always be less than 10 in this case. Manually stop the program and specify `counter +=1`.
 
-```python 
+```python
 counter = 0
 while counter < 10:
   print(counter)
@@ -104,6 +106,7 @@ Fix this by sorting out the inequality to `<`.
 </details>
 
 ## Exit
+
 You can use a `while` loop with text too. In the code below, the while condition is saying "as long as you do not type yes, the computer will type 🥳."
 
 `Run` this code. What do you see?
@@ -120,7 +123,7 @@ exit = input("Exit?: ")
 
 Wait! No matter what you type, you get 🥳. Check your indentation. Change the variable that controls the condition within the loop itself.
 
-```python 
+```python
 exit = ""
 while exit != "yes":
   print("🥳")
@@ -135,7 +138,7 @@ while exit != "yes":
 
 First, delete any other code in your `day15.py` file. Copy each code snippet below into `day15.py` by clicking the copy icon in the top right of each code box. Then, hit `run` and see what errors occur. Fix the errors and press `run` again until you are error free. Click on the `👀 Answer` to compare your code to the correct code.
 
-```python 
+```python
 counter = 0
 while counter < 25:
   print(counter)
@@ -144,7 +147,7 @@ while counter < 25:
 <details>
 <summary>👀 Answer</summary>
 
-```python 
+```python
 counter = 0
 while counter < 25:
   print(counter)
@@ -163,7 +166,7 @@ while counter >= 12:
 <details>
 <summary>👀 Answer</summary>
 
-```python 
+```python
 counter = 0
 while counter <= 12:
   print(counter)
@@ -172,7 +175,7 @@ while counter <= 12:
 
 </details>
 
-```python 
+```python
 exit = ""
 while exit = "yes":
   print("🥳")
@@ -182,7 +185,7 @@ exit = input("Exit?: ")
 <details>
 <summary>👀 Answer</summary>
 
-```python 
+```python
 exit = ""
 while exit != "yes":
   print("🥳")
@@ -197,7 +200,7 @@ Write a program that loops. Inside the loop, ask the user what animal sound they
 
 ### Example
 
-```python 
+```python
 What animal do you want?: Cow
 A cow goes moo.
 
@@ -216,7 +219,6 @@ Do you want to exit?: yes
 - Add nested if statements inside the while loop.
 - End with exit for the user to get out of the loop.
 
-
 </details>
 
 In case you are curious...check out the <a href="https://www.amazon.com/Rain-Labs-Animal-Sounds/dp/B01AHGU3M6" target="_blank">Alexa skill</a> David mentioned in the video.
@@ -226,14 +228,14 @@ In case you are curious...check out the <a href="https://www.amazon.com/Rain-Lab
 <details>
 <summary>👀 Answer</summary>
 
-```python 
+```python
 
 exit = "no"
 
 
 while exit == "no":
   animal_sound = input("What animal sound do you want to hear?")
-  
+
   if animal_sound == "cow" or animal_sound == "Cow":
     print("🐮 Moo")
   elif animal_sound == "pig" or animal_sound == "Pig":
@@ -246,7 +248,7 @@ while exit == "no":
     print("🐶 Woof")
   elif animal_sound == "cat" or animal_sound == "Cat":
     print("🐱 Meow")
-  else: 
+  else:
     print("I don't know that animal sound. Try again.")
 
 
