@@ -42,6 +42,11 @@ CREATE TABLE IF NOT EXISTS myTable (
 conn.commit()
 ```
 
+In SQLite database we use the following syntax to create a table:
+
+<img id="image" src="assets/day61.png" alt="day61 image" width="960">
+
+
 This will create a database file called `day61.db` and a table named `myTable` with columns for tweet data.
 
 ### Adding Data
@@ -60,14 +65,21 @@ cursor.execute("INSERT INTO myTable (key, value) VALUES (?, ?)", (key, value))
 conn.commit()
 ```
 
+### Try to insert more then one key and value
+
+Column names and values both: In this method we will specify both the columns which we want to fill and their corresponding values as shown below:
+
+<img id="image" src="assets/day61_1.png" alt="day61 image" width="960">
+
+
 ## Accessing Data
 
 ### Viewing All keys
 
-You an retrieve and display all keys from table
+You can retrieve and display all keys from table
 
 ```python
-cursor.execute("SELECT key FROM tweets")
+cursor.execute("SELECT key FROM myTable")
 keys = cursor.fetchall()
     
     if not keys:
@@ -77,6 +89,13 @@ keys = cursor.fetchall()
         for key in keys:
             print(key[0])
 ```
+
+This statement is used to retrieve data from an SQLite table and this returns the data contained in the table.
+
+In SQLite the syntax of Select Statement is:
+
+<img id="image" src="assets/day61_3.png" alt="day61 image" width="760">
+
 
 ### Viewing All values
 
@@ -108,10 +127,29 @@ for row in rows:
 
 This function fetches all data from the table and displays them.
 
+### Viewing All ordered by 
+
+The `ORDER BY` statement is a SQL statement that is used to sort the data in either ascending or descending according to one or more columns. By default, `ORDER BY` sorts the data in ascending order.
+
+  - `DESC` is used to sort the data in descending order.
+  - `ASC` to sort in ascending order.
+
+<img id="image" src="assets/day61_4.png" alt="day61 image" width="760">
+
+
+```python
+cursor.execute("SELECT * FROM myTable ORDER BY key")
+rows = cursor.fetchall()
+for row in rows:
+            print(f"{row[0]}\t{row[1]}\t{row[2]}")
+```
 
 ## Removing Data
 
 To delete a specific row from table by its `key`, use the following function:
+
+<img id="image" src="assets/day61_2.png" alt="day61 image" width="760">
+
 
 ```python
 key = "test"
@@ -120,7 +158,7 @@ conn.commit()
 ```
 
 ## Please note 
-All the functions we examined earlier can also be incorporated into other functions:
+We can put the functions we looked at before inside other functions:
 
 ```python
 def insert_data(key, value):
@@ -222,20 +260,20 @@ I know you like to hear the sound of your own voice!
 
 Your program should.
 
-1. Display a menu - Add or View tweets.
+1. Display a menu - `Add` or `View` tweets.
 
-2. 'Add' should:
+2. `'Add'` should:
 
   - Get the tweet input.
   - Store it to the database with the current timestamp as the key value.
-3. 'View' should:
+3. `'View'` should:
 
   - Show the tweets in reverse chronological order.
   - Show 10 tweets at a time.
   - Prompt the user to show another 10 tweets (yes or no).
   - A 'no' choice goes back to the menu.
 
-4. 'Exit' should:
+4. `'Exit'` should:
 
   - close menu.
   
