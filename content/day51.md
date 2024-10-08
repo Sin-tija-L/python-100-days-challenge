@@ -49,9 +49,11 @@ In SQLite database we use the following syntax to create a table:
 
 This will create a database file called `day61.db` and a table named `myTable` with columns for tweet data.
 
+<img id="image" src="assets/day61_5.png" alt="day61 image" width="960">
+
 ### Adding Data
 
-To insert a table with data - kay and value:
+To insert a table with data - key and value:
 
 ```python
 # Prepare the data
@@ -74,6 +76,8 @@ Column names and values both: In this method we will specify both the columns wh
 
 ## Accessing Data
 
+`!NB` Remove the `INSERT INTO myTable` statement from your `day61.py` file. If left together with the `SELECT` statement, it will add a new value to the table each time you run the script.
+
 ### Viewing All keys
 
 You can retrieve and display all keys from table
@@ -82,12 +86,12 @@ You can retrieve and display all keys from table
 cursor.execute("SELECT key FROM myTable")
 keys = cursor.fetchall()
     
-    if not keys:
-        print("The table is empty.")
-    else:
-        print("Keys in the table:")
-        for key in keys:
-            print(key[0])
+if not keys:
+    print("The table is empty.")
+else:
+    print("Keys in the table:")
+    for key in keys:
+        print(key[0])
 ```
 
 This statement is used to retrieve data from an SQLite table and this returns the data contained in the table.
@@ -106,11 +110,11 @@ cursor.execute("SELECT value FROM myTable")
 values = cursor.fetchall()
     
 if not values:
-        print("The table is empty.")
+    print("The table is empty.")
 else:
-        print("Values in the table:")
-        for value in values:
-            print(value[0])
+    print("Values in the table:")
+    for value in values:
+        print(value[0])
 ```
 
 
@@ -122,7 +126,7 @@ You can retrieve and display all data from the database:
 cursor.execute("SELECT * FROM myTable")
 rows = cursor.fetchall()
 for row in rows:
-            print(f"{row[0]}\t{row[1]}\t{row[2]}")
+    print(f"{row[0]}\t{row[1]}\t{row[2]}")
 ```
 
 This function fetches all data from the table and displays them.
@@ -143,6 +147,20 @@ rows = cursor.fetchall()
 for row in rows:
             print(f"{row[0]}\t{row[1]}\t{row[2]}")
 ```
+
+### Please try to add DESC in query! 
+
+<details>
+<summary>👀 Answer</summary>
+
+```python
+cursor.execute("SELECT * FROM myTable ORDER BY key DESC")
+rows = cursor.fetchall()
+for row in rows:
+            print(f"{row[0]}\t{row[1]}\t{row[2]}")
+```
+
+</details>
 
 ## Removing Data
 
