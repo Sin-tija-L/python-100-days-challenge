@@ -1,6 +1,7 @@
 # 👉 Day 61: Database with SQLite
 
-SQLite is a lightweight, serverless database engine that allows you to store data directly in a file on your system. Unlike Replit DB, which is specific to Replit, SQLite can be used in any environment, making it a versatile choice for projects beyond Replit.
+
+SQLite is a lightweight, serverless database that's perfect for small projects and applications. It allows you to store data in a relational database directly in a file on your computer. SQLite can be used across various platforms, making it a versatile option for projects that need a simple and efficient database solution without the need for a separate server.
 
 <a href="https://www.youtube.com/watch?v=girsuXz0yA8" target="_blank">📹 Learn more about SQLite</a>
 
@@ -20,7 +21,7 @@ That’s it! Now we can create a database and start working with it.
 
 SQLite databases store data in tables, similar to how a dictionary uses keys and values. To begin, we’ll connect to the database (or create one if it doesn’t exist) and define our structure.
 
-### Creating a Table
+## Creating a Table
 
 To store data, we have to create a table with three fields: `id` (auto-incrementing), `key`, and `value`.
 
@@ -51,7 +52,7 @@ This will create a database file called `day61.db` and a table named `myTable` w
 
 <img id="image" src="assets/day61_5.png" alt="day61 image" width="960">
 
-### Adding Data
+## Adding Data
 
 To insert a table with data - key and value:
 
@@ -78,7 +79,7 @@ Column names and values both: In this method we will specify both the columns wh
 
 `!NB` Remove the `INSERT INTO myTable` statement from your `day61.py` file. If left together with the `SELECT` statement, it will add a new value to the table each time you run the script.
 
-### Viewing All keys
+## Viewing All keys
 
 You can retrieve and display all keys from table
 
@@ -101,7 +102,7 @@ In SQLite the syntax of Select Statement is:
 <img id="image" src="assets/day61_3.png" alt="day61 image" width="760">
 
 
-### Viewing All values
+## Viewing All values
 
 You an retrieve and display all values from table
 
@@ -118,7 +119,7 @@ else:
 ```
 
 
-### Viewing All data
+## Viewing All data
 
 You can retrieve and display all data from the database:
 
@@ -131,7 +132,7 @@ for row in rows:
 
 This function fetches all data from the table and displays them.
 
-### Viewing All ordered by 
+## Viewing All ordered by 
 
 The `ORDER BY` statement is a SQL statement that is used to sort the data in either ascending or descending according to one or more columns. By default, `ORDER BY` sorts the data in ascending order.
 
@@ -148,6 +149,7 @@ for row in rows:
             print(f"{row[0]}\t{row[1]}\t{row[2]}")
 ```
 
+
 ### Please try to add DESC in query! 
 
 <details>
@@ -162,18 +164,19 @@ for row in rows:
 
 </details>
 
+
 ## Removing Data
 
 To delete a specific row from table by its `key`, use the following function:
 
 <img id="image" src="assets/day61_2.png" alt="day61 image" width="760">
 
-
 ```python
 key = "test"
 cursor.execute("DELETE FROM myTable WHERE key = ?", (key,))
 conn.commit()
 ```
+
 
 ## Please note 
 We can put the functions we looked at before inside other functions:
@@ -276,23 +279,17 @@ Today, we're going to fix the major malfunction with social media - other people
 
 I know you like to hear the sound of your own voice!
 
-Your program should.
-
+Your program should:
 1. Display a menu - `Add` or `View` tweets.
-
 2. `'Add'` should:
-
   - Get the tweet input.
   - Store it to the database with the current timestamp as the key value.
 3. `'View'` should:
-
   - Show the tweets in reverse chronological order.
   - Show 10 tweets at a time.
   - Prompt the user to show another 10 tweets (yes or no).
   - A 'no' choice goes back to the menu.
-
 4. `'Exit'` should:
-
   - close menu.
   
 Timestamp Code:
