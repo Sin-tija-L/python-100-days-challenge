@@ -317,11 +317,11 @@ timestamp = datetime.datetime.now().strftime("%Y-%m-%d %H:%M:%S")
 import sqlite3
 import datetime, os, time
 
-# Connect to SQLite database (or create it if it doesn't exist)
-conn = sqlite3.connect('tweets.db')
+# Connect to the SQLite database (or create it if it doesn't exist)
+conn = sqlite3.connect('day61.db')
 cursor = conn.cursor()
 
-# Create a table if it doesn't exist
+# Create a table to store tweets if it doesn't already exist
 cursor.execute('''
 CREATE TABLE IF NOT EXISTS tweets (
     id INTEGER PRIMARY KEY AUTOINCREMENT,
@@ -334,28 +334,23 @@ conn.commit()
 def addTweet():
     tweet = input("🐥 > ")
     timestamp = datetime.datetime.now().strftime("%Y-%m-%d %H:%M:%S")
-
-# Insert the tweet and timestamp into the SQLite database
+    
     cursor.execute('''
     INSERT INTO tweets (timestamp, tweet)
     VALUES (?, ?)
     ''', (timestamp, tweet))
-
-    conn.commit()  # Save changes
+    
+    conn.commit()
     time.sleep(1)
     os.system("clear")
 
 def viewTweet():
-    # Fetch all tweets in reverse order
     cursor.execute('SELECT * FROM tweets ORDER BY id DESC')
-    matches = cursor.fetchall()  # Get all tweets from the database
-    counter = 0
+    tweets = cursor.fetchall()
 
-# Display the tweets in batches of 10
-    for tweet in matches:
-        print(f"{tweet[1]}: {tweet[2]}")  # Print timestamp and tweet
-        print()
-        time.sleep(0.3)
+    counter = 0
+    for tweet in tweets:
+        print(f"{tweet[1]}: {tweet[2]}")
         counter += 1
         if counter % 10 == 0:
             carryOn = input("Next 10?: ")
@@ -364,20 +359,30 @@ def viewTweet():
     time.sleep(1)
     os.system("clear")
 
-while True:
-    print("Tweeter")
-    menu = input("1: Add Tweet\n2: View Tweets\n3: Exit\n> ")
+def deleteTweet():
+    tweet_id = input("Enter the ID of the tweet to delete: ")
+    cursor.execute('DELETE FROM tweets WHERE id = ?', (tweet_id,))
+    conn.commit()
+    print(f"Tweet with ID {tweet_id} deleted.")
+    time.sleep(1)
+    os.system("clear")
 
+while True:
+    print("❌ Tweeter ❌ ")
+    menu = input("1: Add Tweet\n2: View Tweets\n3: Delete Tweet\n4: Exit\n> ")
+    
     if menu == "1":
         addTweet()
     elif menu == "2":
         viewTweet()
     elif menu == "3":
+        deleteTweet()
+    elif menu == "4":
         print("Exiting the program...")
-        conn.close()  # Close the database connection before exiting
+        conn.close()
         break
     else:
-        print("Invalid option, please choose 1, 2, or 3.")
+        print("Invalid option, please choose 1, 2, 3, or 4.")
 ```
 
 </details>
