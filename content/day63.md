@@ -40,7 +40,11 @@ Cut and paste the code from `day63.py` to `test63.py`.
 
 By now, your `day63.py` file should have nothing in it.
 
-👉 Now run the application. Watch in amazement as nothing happens!
+
+👉 To run this code use terminal and run the file. Watch in amazement as nothing happens!
+
+To run this code open new Terminal and type python `python_files/day63.py` or `python3 python_files/day63.py` and see the result! 🚀
+
 
 Remember, Python runs the code in the `day63.py` file, which at the moment is empty. So we need to import the code.
 
@@ -381,3 +385,5 @@ while True:
 ```
 
 </details>
+
+Šajā uzdevumā run pogu neizmantojam. 
