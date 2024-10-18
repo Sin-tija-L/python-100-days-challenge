@@ -1,4 +1,4 @@
-# 👉 Day 61: Multiple Files
+# 👉 Day 63: Multiple Files
 
 
 <a href="https://www.youtube.com/watch?v=girsuXz0yA8" target="_blank">📹 Dāvida video</a>
@@ -43,7 +43,7 @@ By now, your `day63.py` file should have nothing in it.
 
 👉 To run this code use terminal and run the file. Watch in amazement as nothing happens!
 
-To run this code open new Terminal and type python `python_files/day63.py` or `python3 python_files/day63.py` and see the result! 🚀
+**To run this code open new Terminal and type `python python_files/day63.py` or `python3 python_files/day63.py` and see the result! 🚀**
 
 
 Remember, Python runs the code in the `day63.py` file, which at the moment is empty. So we need to import the code.
@@ -67,245 +67,174 @@ import test63
 print("Countdown")
 ```
 
-### Try to insert more then one key and value
+To solve this, we need to think more like libraries. They consist of a bunch of subroutines that we can import and then **call only when we need them.**
 
-Column names and values both: In this method we will specify both the columns which we want to fill and their corresponding values as shown below:
-
-<img id="image" src="assets/day61_1.png" alt="day61 image" width="960">
-
-
-## Accessing Data
-
-`!NB` Remove the `INSERT INTO myTable` statement from your `day61.py` file. If left together with the `SELECT` statement, it will add a new value to the table each time you run the script.
-
-## Viewing All keys
-
-You can retrieve and display all keys from table
+👉 Back in your `test63.py` file, you need to make the countdown program a subroutine.
 
 ```python
-cursor.execute("SELECT key FROM myTable")
-keys = cursor.fetchall()
-    
-if not keys:
-    print("The table is empty.")
-else:
-    print("Keys in the table:")
-    for key in keys:
-        print(key[0])
+def countdown():
+  for i in range(10):
+    print(i+1)
 ```
 
-This statement is used to retrieve data from an SQLite table and this returns the data contained in the table.
-
-In SQLite the syntax of Select Statement is:
-
-<img id="image" src="assets/day61_3.png" alt="day61 image" width="760">
-
-
-## Viewing All values
-
-You an retrieve and display all values from table
+👉 Finally, let's call it in our `day63.py` file.
 
 ```python
-cursor.execute("SELECT value FROM myTable")
-values = cursor.fetchall()
-    
-if not values:
-    print("The table is empty.")
-else:
-    print("Values in the table:")
-    for value in values:
-        print(value[0])
+import test63
+
+print("Countdown")
+test.countdown() # Test refers to the file, countdown to the subroutine in that file.
 ```
 
+### Try it out!
 
-## Viewing All data
+## Nicknames
 
-You can retrieve and display all data from the database:
+If your file name is really long, you can give it a pseudonym, or nickname, as I believe the hip young things are calling them these days. This will save you time every time you want to run a subroutine from that file.
+
+👉 Use `as` to nickname your file. Here I've used `tt` for the `test63` file.
 
 ```python
-cursor.execute("SELECT * FROM myTable")
-rows = cursor.fetchall()
-for row in rows:
-    print(f"{row[0]}\t{row[1]}\t{row[2]}")
+import test63 as tt
+
+print("Countdown")
+tt.countdown()
 ```
 
-This function fetches all data from the table and displays them.
-
-## Viewing All ordered by 
-
-The `ORDER BY` statement is a SQL statement that is used to sort the data in either ascending or descending according to one or more columns. By default, `ORDER BY` sorts the data in ascending order.
-
-  - `DESC` is used to sort the data in descending order.
-  - `ASC` to sort in ascending order.
-
-<img id="image" src="assets/day61_4.png" alt="day61 image" width="760">
+### Try It Out!
 
 
-```python
-cursor.execute("SELECT * FROM myTable ORDER BY key")
-rows = cursor.fetchall()
-for row in rows:
-            print(f"{row[0]}\t{row[1]}\t{row[2]}")
+
+## Common Errors
+ 
+ First, delete any other code in your `day63.py` file. Copy each code snippet below into `day63.py` by clicking the copy icon in the top right of each code box. Then, hit `run` and see what errors occur. Fix the errors and press `run` again until you are error free. Click on the `👀 Answer` to compare your code to the correct code.
+
+ ### It's... undefinable!
+
+ 👉 Why is it not importing my file?
+
+ ```python
+import test63
+
+print("Countdown")
+countdown()
 ```
-
-
-### Please try to add DESC in query! 
 
 <details>
 <summary>👀 Answer</summary>
 
+We've not referenced the `countdown()` subroutine as belonging to the `test63` file on line 3.
+
 ```python
-cursor.execute("SELECT * FROM myTable ORDER BY key DESC")
-rows = cursor.fetchall()
-for row in rows:
-            print(f"{row[0]}\t{row[1]}\t{row[2]}")
+import test63
+
+print("Countdown")
+test.countdown()
 ```
 
 </details>
 
 
-## Removing Data
+### It's Running The Subroutine Twice?
 
-To delete a specific row from table by its `key`, use the following function:
-
-<img id="image" src="assets/day61_2.png" alt="day61 image" width="760">
+👉 What is the problem here?
 
 ```python
-key = "test"
-cursor.execute("DELETE FROM myTable WHERE key = ?", (key,))
-conn.commit()
+import test63
+
+print("Countdown")
+test.countdown()
 ```
 
+<details>
+<summary>👀 Answer</summary>
 
-## Please note 
-We can put the functions we looked at before inside other functions:
+This is a cunning one, the error is not in the `day63.py` file. In fact, it's because we've called the `countdown()` subroutine **inside the `test63.py` file.**
+
+Be careful to remove any internal subroutine calls in separate files, especially if you're copying code over from other programs.
+
+This is the code from the `test63.py` file:
 
 ```python
-def insert_data(key, value):
-    cursor.execute("INSERT INTO myTable (key, value) VALUES (?, ?)", (key, value))
-    conn.commit()
+def countdown():
+  for i in range(10):
+    print(i+1)
 
-insert_data("test", "Hello World")
+countdown() # Remove this line
 ```
-This revised version maintains the key points while improving clarity and readability. 
+
+</details>
 
 
 ## Fix My Code
 
 👉 Try and fix this code which is full of errors.
 
-First, delete any other code in your `day61.py` file. Copy each code snippet below into `day61.py` by clicking the copy icon in the top right of each code box. Then, hit `run` and see what errors occur. Fix the errors and press `run` again until you are error free. Click on the `👀 Answer` to compare your code to the correct code.
+First, delete any other code in your `day63.py` file. Copy each code snippet below into `day63.py` by clicking the copy icon in the top right of each code box. Then, hit `run` and see what errors occur. Fix the errors and press `run` again until you are error free. Click on the `👀 Answer` to compare your code to the correct code.
 
 ```python
-conn = sqlite3.connect('day61.db')
-cursor = conn.cursor()
+## test63.py file ##############
+import random
 
-cursor.execute('''
-CREATE TABLE IF NOT EXISTS myTable (
-    id INTEGER PRIMARY KEY AUTOINCREMENT,
-    key TEXT,
-    value TEXT
-)
-''')
-conn.commit()
+num = randint(10,100)
 
-def insert_data(key, value):
-    cursor.execute("INSERT INTO myTable (key, value) VALUES (?, ?)", (key, value))
-    conn.commit()
+def countdown():
+  for i in range(num):
+    print(i+1)
 
-def print_keys():
-    cursor.execute("SELECT key FROM myTable")
-    key = cursor.fetchall()
-    
-    if not key
-        print("The table is empty.")
-    else:
-        print("Keys in the table:")
-        for key in key
-            print(key)
+countdown()
 
-insert_data("test3", "Hello World")
-insert_data("test4", "Hello There")
-print_keys()
+### day63.py file ###############
+
+import tt
+
+print("Countdown")
+countdown()
 ```
-
 
 <details>
 <summary>👀 Answer</summary>
 
 ```python
-import sqlite3 # no import
+## test63.py file ##############
+import random
 
-conn = sqlite3.connect('day61.db')
-cursor = conn.cursor()
+num = random.randint(10,100) # Need the random. to refer to the random library
 
+def countdown():
+  for i in range(num):
+    print(i+1)
 
-cursor.execute('''
-CREATE TABLE IF NOT EXISTS myTable (
-    id INTEGER PRIMARY KEY AUTOINCREMENT,
-    key TEXT,
-    value TEXT
-)
-''')
-conn.commit()
+# Removed internal subroutine call.
 
-def insert_data(key, value):
-    cursor.execute("INSERT INTO myTable (key, value) VALUES (?, ?)", (key, value))
-    conn.commit()
+### day63.py file ###############
 
-def print_keys():
-    cursor.execute("SELECT key FROM myTable")
-    keys = cursor.fetchall() # missing 's' from 'key'
-    
-    if not keys:  #missing colon
-        print("The table is empty.")
-    else:
-        print("Keys in the table:")
-        for key in keys:  #missing colon
-            print(key[0]) # Only key column data, but we need a value
+import test63 as tt # No such file as tt, that's the nickname I want to give the 'test' file
 
-insert_data("test3", "Hello World")
-insert_data("test4", "Hello There")
-print_keys()
+print("Countdown")
+tt.countdown() # Referenced 'tt' file nickname before the call.
 ```
 
 </details>
 
-## 👉 Day 61 Challenge
 
-###  Someone is wrong on the Internet!
-Today, we're going to fix the major malfunction with social media - other people and their stupid opinions- and create a Twitter for one!
+## 👉 Day 63 Challenge
 
-I know you like to hear the sound of your own voice!
+Today's challenge is to become your own librarian. Oook!
 
-Your program should:
-1. Display a menu - `Add` or `View` tweets.
-2. `'Add'` should:
-  - Get the tweet input.
-  - Store it to the database with the current timestamp as the key value.
-3. `'View'` should:
-  - Show the tweets in reverse chronological order.
-  - Show 10 tweets at a time.
-  - Prompt the user to show another 10 tweets (yes or no).
-  - A 'no' choice goes back to the menu.
-4. `'Exit'` should:
-  - close menu.
-  
-Timestamp Code:
+In the real world, programmers usually keep a library of their most useful subroutines just like this. You're going to curate your own library with these subroutines.
 
-```python
-timestamp = datetime.datetime.now().strftime("%Y-%m-%d %H:%M:%S")
-```
+1. Go back through your programs and choose some subroutines that you've used a *lot*. Perhaps it was your dice roller. Could be your *prettyPrint*. Maybe it was your 'generate random baldy insult' subroutine. Whatever. Find them.
+2. Create a new file that contains all your best subroutines.
+3. Import this file into your `day63.py` and call a few to show that it works.
 
 <details>
 <summary>💡 Hint</summary>
 
-- Use the `datetime` library to get the current timestamp.
-- Use the `conn.close()` to close menu
-- Use the `os` library to clear the console between each 10 tweets shown.
-
+- You're better than this by now! No hints today, amigos! Good luck!
 
 </details>
+
 
 ## Solution (No Peeking!)
 
@@ -313,77 +242,37 @@ timestamp = datetime.datetime.now().strftime("%Y-%m-%d %H:%M:%S")
 <summary>👀 Answer</summary>
 
 ```python
-import sqlite3
-import datetime, os, time
+## test63.py file ##############
+import random
 
-# Connect to the SQLite database (or create it if it doesn't exist)
-conn = sqlite3.connect('day61.db')
-cursor = conn.cursor()
+def createCharacter():
+  name = input("Name your Legend: ")
+  print()
+  type = input("Character Type (Human, Elf, Wizard, Orc): ")
+  print()
+  return name + ": the " + type
 
-# Create a table to store tweets if it doesn't already exist
-cursor.execute('''
-CREATE TABLE IF NOT EXISTS tweets (
-    id INTEGER PRIMARY KEY AUTOINCREMENT,
-    timestamp TEXT,
-    tweet TEXT
-)
-''')
-conn.commit()
+def generateStats(name, number):
+  diceSides1 = random.randint(1, 100)
+  diceSides2 = random.randint(1, 100)
+  number1 = random.randint(1, diceSides1)
+  number2 = random.randint(1, diceSides2)
+  intelligence = ((number1 * number2) / 2) + number
+  print(name, intelligence)
 
-def addTweet():
-    tweet = input("🐥 > ")
-    timestamp = datetime.datetime.now().strftime("%Y-%m-%d %H:%M:%S")
-    
-    cursor.execute('''
-    INSERT INTO tweets (timestamp, tweet)
-    VALUES (?, ?)
-    ''', (timestamp, tweet))
-    
-    conn.commit()
-    time.sleep(1)
-    os.system("clear")
 
-def viewTweet():
-    cursor.execute('SELECT * FROM tweets ORDER BY id DESC')
-    tweets = cursor.fetchall()
+### day63.py file ###############
 
-    counter = 0
-    for tweet in tweets:
-        print(f"{tweet[1]}: {tweet[2]}")
-        counter += 1
-        if counter % 10 == 0:
-            carryOn = input("Next 10?: ")
-            if carryOn.lower() == "no":
-                break
-    time.sleep(1)
-    os.system("clear")
+import test63 as tt
 
-def deleteTweet():
-    tweet_id = input("Enter the ID of the tweet to delete: ")
-    cursor.execute('DELETE FROM tweets WHERE id = ?', (tweet_id,))
-    conn.commit()
-    print(f"Tweet with ID {tweet_id} deleted.")
-    time.sleep(1)
-    os.system("clear")
+print(tt.createCharacter())
 
-while True:
-    print("❌ Tweeter ❌ ")
-    menu = input("1: Add Tweet\n2: View Tweets\n3: Delete Tweet\n4: Exit\n> ")
-    
-    if menu == "1":
-        addTweet()
-    elif menu == "2":
-        viewTweet()
-    elif menu == "3":
-        deleteTweet()
-    elif menu == "4":
-        print("Exiting the program...")
-        conn.close()
-        break
-    else:
-        print("Invalid option, please choose 1, 2, 3, or 4.")
+print()
+
+tt.generateStats("Alise", 55)
 ```
 
 </details>
 
-Šajā uzdevumā run pogu neizmantojam. 
+
+**Run file from terminal in this task**
