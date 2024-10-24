@@ -4,7 +4,7 @@
 <a href="https://youtu.be/MhVg1LVKP5k" target="_blank">📹 David video</a>
 
 
-**DISCLAIMER: As the title states, this can get gooey. TKinter totally sucks - if you'd rather move on to something more fun, click "mark lesson as complete" and move on to Day 70 to get back to the good stuff.**
+**DISCLAIMER: As the title states, this can get gooey. TKinter totally sucks - if you'd rather move on to something more fun, click "mark lesson as complete" and move on to Day 70 to get back to the good stuff. Also this may not work in VSCode. If it is so, then move to day 70. We still have lots of challenges to finish. 💪**
 
 It's time to bring our programs into the early 90s as we learn how to create a Graphical User Interface (GUI) with a Python library called tkinter.
 

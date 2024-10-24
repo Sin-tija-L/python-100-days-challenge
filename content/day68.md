@@ -4,7 +4,7 @@
 <a href="https://youtu.be/Bj1TkuZEjK0" target="_blank">📹 David video</a>
 
 
-**DISCLAIMER: I promise the good stuff is coming back. We have to go through the valley to get to the mountain, right?**
+**DISCLAIMER: I promise the good stuff is coming back. We have to go through the valley to get to the mountain, right? Also this may not work in VSCode. If it is so, then move to day 70. We still have lots of challenges to finish. 💪**
 
 Sometimes, we want to remove a button, image or piece of text from the screen.
 

@@ -4,7 +4,7 @@
 <a href="https://youtu.be/Bj1TkuZEjK0" target="_blank">📹 David video</a>
 
 
-**I will say it again for the people in the back. tkinter is horrible. I only showed you this so you will have more love and appreciation for what's coming up next. Click "mark lesson as complete" and skip ahead to Day 70 if tkinter is not your thing.**
+**I will say it again for the people in the back. tkinter is horrible. I only showed you this so you will have more love and appreciation for what's coming up next. Click "mark lesson as complete" and skip ahead to Day 70 if tkinter is not your thing. Also this may not work in VSCode. If it is so, then move to day 70. We still have lots of challenges to finish. 💪**
 
 Most GUI creators have a lovely drag & drop interface that makes life easy. tkinter doesn't, so it can feel awkward, fiddly, and frustrating at times.
 
