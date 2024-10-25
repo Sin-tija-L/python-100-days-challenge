@@ -4,7 +4,7 @@
 ### Challenge Instructions (Run in VSCode)
 
 In this challenge, we will be taking a crash course in **HTML** (Hyper Text Markup Language). We'll create a simple webpage using HTML tags, headings, paragraphs, images, lists, and links. To run this code locally in VSCode, we will also use **Flask** to serve the HTML.
-About **Flask** in more details we are going to talk on **day 75**!
+About **Flask** in more details we are going to talk on **day 76**!
 
 ---
 
@@ -20,7 +20,7 @@ Before we begin, you need to install **Flask** to run the HTML files using Pytho
 
    or
 
-   pip install Flask
+   pip3 install Flask
    ```
 
 2. **Use a Python File**:
