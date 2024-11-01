@@ -54,139 +54,171 @@ Your link tree website should include:
 
 ```python
 <!DOCTYPE html>
-<html>
-  <head>
-    <title>Alises Portfolio</title>
-    <link href="{{ url_for('static', filename='styles/portfolio.css') }}" rel="stylesheet" type="text/css" />
-  </head>
-
-  <body>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="{{ url_for('static', filename='styles/day75.css') }}">
+    <title>Alise's Link Tree</title>
+</head>
+<body>
     <div class="container">
-      <h1>Alises Portfolio</h1>
+        <!-- Profile Section -->
+        <div class="header">
+            <img src="{{ url_for('static', filename='images/myPicture.png') }}" alt="Alise Alka's Profile Picture" class="profile-pic">
+            <h1>Alise Alka</h1>
+            <p class="tagline">Empowering Women in IT</p>
+            <div class="social-media">
+                <a href="https://twitter.com/MissAlise" target="_blank">Twitter</a>
+                <a href="https://www.instagram.com/alisealka/" target="_blank">Instagram</a>
+                <a href="https://www.linkedin.com/in/%F0%9F%9A%80-alise-a-745863131/" target="_blank">LinkedIn</a>
+            </div>
+        </div>
 
-      <!-- Project 1 -->
-      <div class="project">
-        <h2>Day 72!</h2>
-        <p>This is Alises secret diary, and you can access it only with the right credentials.</p>
-        <a href="https://replit.com/@aalisiite/Day72100Days?v=1">
-          <img src="{{ url_for('static', filename='images/day72.png') }}" alt="Day 72 project image">
-        </a>
-      </div>
+        <!-- Links Section -->
+        <div class="links">
+            <h2>My Work</h2>
+            <ul>
+                <li><a href="https://replit.com/@aalisiite" target="_blank">Replit</a></li>
+            </ul>
 
-      <!-- Project 2 -->
-      <div class="project">
-        <h2>Day 10!</h2>
-        <p>This was the first task in the Python challenge, where you had to do a bit of math to calculate %.</p>
-        <a href="https://replit.com/@aalisiite/day10?v=1">
-          <img src="{{ url_for('static', filename='images/day10.png') }}" alt="Day 10 project image">
-        </a>
-      </div>
-
-      <!-- Project 3 -->
-      <div class="project">
-        <h2>Day 24!</h2>
-        <p>On this day, I had to write a program that rolls a dice.</p>
-        <a href="https://replit.com/@aalisiite/day24?v=1">
-          <img src="{{ url_for('static', filename='images/day24.png') }}" alt="Day 24 project image">
-        </a>
-      </div>
-
-      <!-- Project 4 -->
-      <div class="project">
-        <h2>Day 49!</h2>
-        <p>On day 49, I learned how to manage files within my project.</p>
-        <a href="https://replit.com/@aalisiite/day49?v=1">
-          <img src="{{ url_for('static', filename='images/day49.png') }}" alt="Day 49 project image">
-        </a>
-      </div>
-
-      <!-- Project 5 -->
-      <div class="project">
-        <h2>Day 60!</h2>
-        <p>This day taught me about date and time management in Python.</p>
-        <a href="https://replit.com/@aalisiite/day60?v=1">
-          <img src="{{ url_for('static', filename='images/day60.png') }}" alt="Day 60 project image">
-        </a>
-      </div>
+            <h2>Profiles</h2>
+            <ul>
+                <li><a href="https://github.com/aalisiite" target="_blank">GitHub</a></li>
+                <li><a href="https://replit.com/@aalisiite" target="_blank">Replit</a></li>
+            </ul>
+        </div>
     </div>
-  </body>
+</body>
 </html>
 ```
 
 ### CSS file
 
 ```python
-/* Page styling */
-body {
-    font-family: Arial, sans-serif;
-    background-color: #f9f9f9;
-    color: #333;
+/* General styling */
+* {
+    box-sizing: border-box;
     margin: 0;
-    padding: 20px;
-  }
-  
-  /* Main title styling */
-  h1 {
-    font-size: 36px;
-    text-align: center;
-    color: #2c3e50;
-    margin-bottom: 30px;
-  }
-  
-  /* Section heading styling */
-  h2 {
-    font-size: 24px;
-    color: #2980b9;
-    margin-top: 40px;
-  }
-  
-  /* Paragraph styling */
-  p {
-    font-size: 16px;
-    color: #555;
-    line-height: 1.6;
-  }
-  
-  /* Image styling */
-  img {
+    padding: 0;
+}
+
+body, html {
+    font-family: 'Arial', sans-serif;
+    background: linear-gradient(135deg, #fce4ec, #f3e5f5);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    color: #333;
+}
+
+/* Main container styling */
+.container {
+    max-width: 600px;
     width: 100%;
-    max-width: 300px;
-    border-radius: 8px;
-    transition: transform 0.3s ease;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-  }
-  
-  /* Hover effect for images */
-  img:hover {
-    transform: scale(1.05);
-  }
-  
-  /* Link styling */
-  a {
-    text-decoration: none;
-    color: inherit;
-  }
-  
-  /* Container styling */
-  .container {
-    max-width: 800px;
-    margin: auto;
-  }
-  
-  /* Project box styling */
-  .project {
-    background-color: #fff;
-    border: 1px solid #ddd;
-    border-radius: 8px;
-    padding: 20px;
+    padding: 30px;
+    background-color: #ffffff;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+    border-radius: 15px;
+    text-align: center;
+    animation: fadeIn 1.2s ease;
+}
+
+/* Profile Picture styling */
+.profile-pic {
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    object-fit: cover;
+    box-shadow: 0px 6px 12px rgba(153, 102, 255, 0.2);
+    margin-bottom: 15px;
+}
+
+/* Header Text */
+h1 {
+    font-size: 32px;
+    color: #6a1b9a;
+    margin-top: 10px;
+}
+
+.tagline {
+    font-size: 18px;
+    color: #8e24aa;
     margin-bottom: 20px;
-    transition: box-shadow 0.3s ease;
-  }
-  
-  /* Hover effect for project containers */
-  .project:hover {
-    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
-  }
+    font-style: italic;
+}
+
+/* Social Media Links */
+.social-media a {
+    display: inline-block;
+    text-decoration: none;
+    color: #ffffff;
+    font-size: 16px;
+    padding: 10px 20px;
+    margin: 8px;
+    border-radius: 25px;
+    background-color: #ab47bc;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.social-media a:hover {
+    background-color: #8e24aa;
+    transform: scale(1.1);
+}
+
+/* Links Section Styling */
+.links {
+    margin-top: 20px;
+    text-align: left;
+}
+
+.links h2 {
+    font-size: 22px;
+    color: #6a1b9a;
+    margin-bottom: 15px;
+}
+
+.links ul {
+    list-style: none;
+    padding: 0;
+}
+
+.links li {
+    margin-bottom: 10px;
+}
+
+/* Link buttons */
+.links a {
+    display: block;
+    text-decoration: none;
+    color: #6a1b9a;
+    font-weight: bold;
+    font-size: 18px;
+    padding: 12px 15px;
+    background: #f3e5f5;
+    border: 2px solid #8e24aa;
+    border-radius: 10px;
+    transition: background-color 0.3s ease, color 0.3s ease, transform 0.3s ease;
+}
+
+.links a:hover {
+    background-color: #8e24aa;
+    color: #ffffff;
+    transform: scale(1.05);
+}
+
+/* Animation */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
 ```
 
 </details>
