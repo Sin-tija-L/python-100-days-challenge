@@ -1,5 +1,7 @@
 # 👉 Day 76: Flask in VSCode! 🚀🐍
 
+### Challenge Instructions (Run in VSCode)
+
 Ready to take HTML & CSS to the next level? Today, we’re adding **Python** to the mix with **Flask**! 🎉
 
 **Flask** allows us to build a mini web server that runs continuously, serving up custom web pages that adapt to each user’s actions. This means we’re no longer limited to static HTML & CSS – we’re stepping into the world of **dynamic web apps**! 🔄✨
