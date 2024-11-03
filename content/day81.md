@@ -30,7 +30,7 @@ Today’s challenge is to create a fun and interactive **"I'm Not a Robot"** ver
 
 <img id="image" src="assets/day81_2.png" alt="day81 image" width="960">
 
-<img id="image" src="assets/day83_3.png" alt="day81 image" width="960">
+<img id="image" src="assets/day81_3.png" alt="day81 image" width="960">
 
 ---
 
