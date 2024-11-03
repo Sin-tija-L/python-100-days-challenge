@@ -5,6 +5,8 @@ Welcome to Day 78! Today, you’ll create a personalized reflection journal to l
 
 ---
 
+### Challenge Instructions (Run in VSCode)
+
 ## 🛠️ Challenge Overview
 
 In this challenge, you’ll:
