@@ -1,4 +1,3 @@
-
 # 👉 Day 81 Challenge: Build an "I'm Not a Robot" Verification Program 🤖
 
 Today’s challenge is to create a fun and interactive **"I'm Not a Robot"** verification program to distinguish humans from robots. 🕹️
@@ -30,7 +29,7 @@ Today’s challenge is to create a fun and interactive **"I'm Not a Robot"** ver
 
 <img id="image" src="assets/day81_2.png" alt="day81 image" width="960">
 
-<img id="image" src="assets/day83_3.png" alt="day81 image" width="960">
+<img id="image" src="assets/day81_3.png" alt="day81 image" width="960">
 
 ---
 
@@ -48,7 +47,7 @@ Happy coding! 🥳
 <details>
 <summary>👀 Answer</summary>
 
-### day78.py file
+### day81.py file
 
 ```python
 from flask import Flask, request, render_template

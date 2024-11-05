@@ -1,4 +1,3 @@
-
 # 🚀 Day 82: Don't Stop 'Til You Get It! 🎉
 
 Today, let's explore an alternative method for fetching data from forms on the webserver — introducing the `GET` method!
