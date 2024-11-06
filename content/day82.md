@@ -203,8 +203,6 @@ Test it out, and see how smoothly you can switch between languages!
 <details>
 <summary>👀 Answer</summary>
 
----
-
 ```python
 from flask import Flask, request
 
