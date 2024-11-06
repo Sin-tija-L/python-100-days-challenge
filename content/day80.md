@@ -1,4 +1,3 @@
-
 # 🚀 Day 80: Incoming Data Handling!
 
 Today, we’ll dive into handling form data in Flask! We’re going to retrieve data from a form and add some logic to decide what response the server will give based on user input. Let’s get started! 🌟

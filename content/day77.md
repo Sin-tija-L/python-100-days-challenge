@@ -473,8 +473,6 @@ Good luck, and happy coding!
 <details>
 <summary>👀 Answer</summary>
 
----
-
 👉 **day77.py**
 
 ```python
