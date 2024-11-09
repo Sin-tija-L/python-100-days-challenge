@@ -654,7 +654,7 @@ if __name__ == "__main__":
 </html>
 ```
 
-**index.html**
+**day85.html**
 ```python
 <!DOCTYPE html>
 <html lang="en">
@@ -671,7 +671,7 @@ if __name__ == "__main__":
 </html>
 ```
 
-**styles.css** (Optional styling for better visuals)
+**day84.css** (Optional styling for better visuals)
 ```python
 body {
     font-family: 'Poppins', sans-serif;
