@@ -88,7 +88,6 @@ Good luck and have fun! 🍀 Don’t forget to share your creation with the comm
 
 ## Solution (No Peeking!)
 
-
 <details>
 <summary>👀 Answer</summary>
 
