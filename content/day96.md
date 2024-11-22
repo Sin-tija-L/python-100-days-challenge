@@ -357,6 +357,8 @@ Scrape those headlines, uncover hidden insights, and have fun while doing it! ğŸ
 
 <img id="image" src="assets/day96_4.png" alt="day96 image" width="720">
 
+---
+
 ## Solution (No Peeking!)
 
 <details>
